@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-02-10T17:10:38 IST" name="Suite" finished-at="2023-02-10T17:12:09 IST" duration-ms="90362">
+    <groups>
+    </groups>
+    <test started-at="2023-02-10T17:10:38 IST" name="Test" finished-at="2023-02-10T17:12:09 IST" duration-ms="90362">
+      <class name="TestLayer.HomePageTest">
+        <test-method signature="validateHomepage()[pri:1, instance:TestLayer.HomePageTest@d5b810e]" started-at="2023-02-10T17:10:57 IST" name="validateHomepage" finished-at="2023-02-10T17:10:59 IST" duration-ms="1968" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateHomepage -->
+        <test-method signature="clickOndeals(java.lang.String)[pri:2, instance:TestLayer.HomePageTest@d5b810e]" started-at="2023-02-10T17:11:02 IST" name="clickOndeals" data-provider="dealstitle" finished-at="2023-02-10T17:11:04 IST" duration-ms="2254" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TitlePC]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOndeals -->
+        <test-method signature="clickOndeals(java.lang.String)[pri:2, instance:TestLayer.HomePageTest@d5b810e]" started-at="2023-02-10T17:11:04 IST" name="clickOndeals" data-provider="dealstitle" finished-at="2023-02-10T17:12:05 IST" duration-ms="61365" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TitleLaptop]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //button[text()='Create'] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-P3K3P5S', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\RAVIND~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56942}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56942/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f59f74a888416d7da45af939ee976fad]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //button[text()='Create'] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-P3K3P5S', ip: '192.168.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\RAVIND~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56942}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56942/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f59f74a888416d7da45af939ee976fad
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at UtilLayer.UtilsClass.expClickElement(UtilsClass.java:21)
+at PageLayer.HomePage.Deals(HomePage.java:46)
+at TestLayer.HomePageTest.clickOndeals(HomePageTest.java:24)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOndeals -->
+        <test-method signature="clickOndeals(java.lang.String)[pri:2, instance:TestLayer.HomePageTest@d5b810e]" started-at="2023-02-10T17:12:05 IST" name="clickOndeals" data-provider="dealstitle" finished-at="2023-02-10T17:12:07 IST" duration-ms="1957" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TitleMobile]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOndeals -->
+        <test-method signature="validTitle()[pri:3, instance:TestLayer.HomePageTest@d5b810e]" started-at="2023-02-10T17:12:07 IST" name="validTitle" finished-at="2023-02-10T17:12:09 IST" duration-ms="1591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validTitle -->
+      </class> <!-- TestLayer.HomePageTest -->
+      <class name="TestLayer.LoginpageTest">
+        <test-method signature="LoginpageFunctinality()[pri:0, instance:TestLayer.LoginpageTest@1a18644]" started-at="2023-02-10T17:10:39 IST" name="LoginpageFunctinality" finished-at="2023-02-10T17:10:57 IST" duration-ms="17818" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginpageFunctinality -->
+      </class> <!-- TestLayer.LoginpageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
